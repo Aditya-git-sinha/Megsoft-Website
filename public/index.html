@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fav-icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/Logo.png" />
+
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- AJAX API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- scripts -->
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/ajax.js"></script>
+
+    <title>Advanced Accounting Software - MegSoft</title>
+  </head>
+  <body>
+    <!--
+      ########### main-section ##############
+    -->
+    <main class="main">
+      <section class="section hero-section">
+        <div class="svg-content spiral-bg">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="container grid grid-two-cols">
+          <div class="hero-img">
+            <div class="laptop">
+              <div class="display">
+                <div class="cam">
+                  <img src="./assets/imgs/webcam.png" alt="" />
+                </div>
+                <div class="screen">
+                  <!-- attach a image as wallpaper -->
+                  <!-- <img src="./assets/imgs/macdesk.webp" alt="wallpaper" /> -->
+                  <!-- attach any online/yt video as a screen  -->
+                  <!--  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/HIqONcVBEm0"
+                    title="Top 5 VS Code Productivity Tips Marathon"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe> -->
+
+                  <!-- to attach a local video -->
+                  <video
+                    src="./assets/vid1.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                    width="100%"
+                    height="100%"
+                    poster="./assets/imgs/macdesk.webp"
+                  ></video>
+                </div>
+              </div>
+              <div class="keyboard-wrap">
+                <div class="start-btn">
+                  <span class="indicator"></span>
+                </div>
+
+                <div class="keys">
+                  <img src="./assets/imgs/kbd.png" alt="keys-images" />
+                </div>
+                <div class="track-pad"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-text-heading">MegSoft</h1>
+            <hr class="separator" />
+            <p class="hero-text-para">
+              Streamline your accounting processes and take control of your
+              business finances with our user-friendly software.
+            </p>
+            <a href="#contact-us" class="btn hero-text-button">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--
+      ########### features-section ##############
+    -->
+    <section class="section features-section">
+      <div class="features-bg"></div>
+      <div class="desc">
+        <p class="top">Features</p>
+        <h2>Software Features</h2>
+      </div>
+      <div class="container grid grid-two-cols" id="cards"></div>
+    </section>
+
+    <!-- 
+      ########### image-diff-section ##############
+    -->
+    <section class="section feature-image-section">
+      <div class="container feature-image-container">
+        <div class="feature-image-header">
+          <h2>Detect Data From Documents</h2>
+        </div>
+        <div class="feature-image-content">
+          <ul>
+            <li>
+              <img src="./assets/imgs/From.png" alt="temp-0" />
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 500 511.61"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="nonzero"
+                  d="M265.959 148.387l15.5 101.271c-45.53-4.53-96.071-15.77-138.721-45.891-47.721-33.69-86.321-91.71-98.251-191.801-.87-7.431-7.62-12.75-15.06-11.87-5.73.679-10.21 4.86-11.55 10.139C6.996 42.846 1.416 73.656.246 102.576c-3.27 79.401 26.391 144.221 70.181 193.612 43.36 48.921 100.661 82.641 153.321 100.331 20.181 6.8 39.791 11.27 57.771 13.36l-15.44 85.831c-1.32 7.34 3.57 14.38 10.91 15.691 4.07.719 8.04-.46 11-2.901l207.102-171.301c5.76-4.771 6.57-13.33 1.8-19.081l-1.54-1.59-207.062-180.392c-5.64-4.92-14.22-4.32-19.14 1.321a13.531 13.531 0 00-3.191 10.93h.001z"
+                />
+              </svg>
+            </li>
+            <li>
+              <img src="./assets/imgs/table.gif" alt="temp-1" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ########### ContactUs-section ##############
+    -->
+    <section class="section contact-us-section" id="contact-us">
+      <div class="container form-container">
+        <div class="form-title small">Need Help?</div>
+        <div class="form-title big">Contact With Us</div>
+        <hr />
+        <form id="contact-form" action="/send" method="post">
+          <fieldset>
+            <input
+              class="border-glow"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Full Name*"
+              required
+            />
+            <input
+              class="border-glow"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email*"
+              required
+            />
+            <input
+              class="border-glow"
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject*"
+              required
+            />
+            <textarea
+              placeholder="Please, Enter your concern here...*"
+              class="border-glow"
+              id="messgae"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              name="submit"
+              value="submit"
+              form="contact-form"
+              class="btn-2"
+            >
+              submit
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!--
+      ########### Footer-section ##############
+    -->
+    <footer>
+      <div class="footer-container">
+        <div class="three-column">
+          <img src="assets/imgs/Logo.png" alt="Logo" />
+          <p>Simplify. Succeed</p>
+        </div>
+        <div class="three-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="three-column">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li>
+              <a href="#"
+                ><i class="fab fa-facebook-square"></i> <span>Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-twitter"></i> <span>Twitter</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram"></i> <span>Instagram</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/firellama-technology-pvt-ltd/"
+                ><i class="fab fa-linkedin-in"></i> <span>Linked-In</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer class="copyright-section">
+      <div class="copyright-txt">
+        <p>&copy; 2023 FireLLama Technology Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
