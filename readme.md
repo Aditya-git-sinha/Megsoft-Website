@@ -1,6 +1,11 @@
 # Readme.md
 
-## Configuration : First Things First
+## For client side
+
+- there is nothing much to do for frontend part, just launch the client side on localhost or with github page.
+- For github page, Make sure your files are in the root directory.Otherwise it will give 404 error.
+
+## Configuration : First Things First (For Server side)
 
 1. `npm init -y` initialize it first
 2. install the  required dependencies `npm install express nodemailer body-parser dotenv`
