@@ -195,7 +195,7 @@ a {
 }
 .spiral-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   overflow: hidden;
   transform: rotate(180deg);
